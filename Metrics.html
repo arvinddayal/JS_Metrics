@@ -11,7 +11,7 @@
 	
 		</style>
 	</head>
-	<body onload="calctime(), scroll()">
+	<body onload="calctime()">
 
 		<div class="main">
 		<div>
@@ -81,9 +81,9 @@
 		</div>
 		</div>
 
-		<input class="show-hide" type="button" value="Show/Hide Metrics" onclick="return showHide()"/>
+		<input class="show-hide" type="button" value="Show/Hide Metrics" onclick="return showHide(), scroll()"/>
 
-		<div id="metric-popup">
+		<div id="metric-popup" >
 			<p id="scroll-per"></p>
 			<p>Distance Scrolled:</p>
 			<p>Time before clicking Sign up:</p>
