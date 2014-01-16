@@ -1,3 +1,4 @@
+/**Shows/hides pop-up div containing metrics but clicking on button*/
 function showHide () {
 	var ele = document.getElementById("metric-popup");
 	if(ele.style.display == "none") {
@@ -8,14 +9,14 @@ function showHide () {
 	};
 };
 
+// Calcs and enters time spent on page
 function calctime() {	
 	var t = setTimeout("calctime()",1000);
-    document.getElementById("time").innerHTML="Seconds you spent viewing this page:" + t + " sec";
+    document.getElementById("time").innerHTML="Seconds you spent viewing this page: " + t;
 }
 
-function view() {
-	var v = ((_get_window_Yscroll() + _get_window_height()) / _get_doc_height() * 100);
-	document.getElementById("scroll").innerHTML="You have viewed: " + v + "%";
-	console.log(v)
+// Calculates and enters percent scrolled
+function scroll() {
+    var p = ((document.body.scrollTop / document.body.scrollHeight) * 100);
+    document.getElementById("scroll-per").innerHTML="You have viewed " + p + " % of this page.";
 }
-
