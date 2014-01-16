@@ -3,11 +3,21 @@ html, body {
 	width: 100%;
 }
 
+div {
+	margin: 5px;
+	padding: 5px;
+	border: 2pt solid #000;
+}
+
+h1, h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
 .show-hide {
 	position: fixed;
 	left: 50%;
 	bottom: 0%;
-
 }
 
 #metric-popup {
@@ -15,9 +25,23 @@ html, body {
 	position: fixed;
 	border: 3pt solid #FFF;
 	padding: 5px;
+	margin: auto;
 	top: 50%;
 	left: 50%;
 	display: none;
 	z-index: 100;
 	border: 5pt solid #000;
+	border-radius: 25pt;
+}
+
+#first {
+	color: #F00;
+}
+
+#second {
+	color: #0F0;
+}
+
+#third {
+	color: #00F;
 }

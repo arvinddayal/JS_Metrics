@@ -7,7 +7,6 @@ function showHide () {
 	else {
 		ele.style.display = "none" ;
 	};
-
 }
 
 // Calcs and enters time spent on page
@@ -19,5 +18,7 @@ function calctime() {
 // Calculates and enters percent scrolled
 function scroll() {
     var p = ((document.body.scrollTop / document.body.scrollHeight) * 100);
-    document.getElementById("scroll-per").innerHTML="You have viewed " + p + " % of this page.";
+    document.getElementById("scroll-per").innerHTML="You have viewed " + p + "% of this page.";
 }
+
+console.log(document.body.scrollTop)
