@@ -1,0 +1,18 @@
+.show-hide {
+	position: fixed;
+	left: 50%;
+	bottom: 0%;
+
+}
+
+#metric-popup {
+	background-color: rgba(200,200,200,1);
+	position: fixed;
+	border: 3pt solid #FFF;
+	padding: 5px;
+	top: 50%;
+	left: 50%;
+	display: none;
+	z-index: 100;
+	border: 5pt solid #000;
+}
