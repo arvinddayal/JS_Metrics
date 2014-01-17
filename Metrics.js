@@ -16,12 +16,15 @@ function showHide () {
 }
 
 // Calculates and enters percent scrolled
+window.onscroll = scroll;
+
 function scroll() {
     var p = ((document.body.scrollTop / document.body.scrollHeight) * 100);
     document.getElementById("scroll-per").innerHTML="You have viewed " + p + "% of this page.";
 }
 
 // Calcs distance scrolled
+
 function distance () {
 	var d = (pageYOffset);
 	document.getElementById("dist").innerHTML="You have scrolled " + d + " pixels.";
