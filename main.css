@@ -1,12 +1,12 @@
 html, body {
 	height: 100%;
-	width: 100%;
+	width: 100%; 
 }
 
 div {
 	margin: 5px;
 	padding: 5px;
-	border: 2pt solid #000;
+	border: 2pt solid #C0C0C0;
 }
 
 h1, h2 {
@@ -14,14 +14,30 @@ h1, h2 {
 	text-decoration: underline;
 }
 
+#first {
+	color: #c60303;
+}
+
+#second {
+	color: #000;
+}
+
+#third {
+	color: #00F;
+}
+
 .show-hide {
 	position: fixed;
+	background-color: rgba(200,200,200,.8);
+	border: 2pt solid #000;
+	font-weight: bold;
 	left: 50%;
 	bottom: 0%;
+	z-index: 2;
 }
 
 #metric-popup {
-	background-color: rgba(200,200,200,1);
+	background-color: rgba(200,200,200,.8);
 	position: fixed;
 	border: 3pt solid #FFF;
 	padding: 5px;
@@ -29,19 +45,7 @@ h1, h2 {
 	top: 50%;
 	left: 50%;
 	display: none;
-	z-index: 100;
+	z-index: 1;
 	border: 5pt solid #000;
 	border-radius: 25pt;
-}
-
-#first {
-	color: #F00;
-}
-
-#second {
-	color: #0F0;
-}
-
-#third {
-	color: #00F;
 }
